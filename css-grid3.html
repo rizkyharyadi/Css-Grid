@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>css grid</title>
+		<style>
+
+			body{
+				background-color: #211E1E;
+			}
+			.container{
+				margin-top: 10px;
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-rows: 150px 150px 150px 150px;
+				grid-gap: 10px;
+			}
+
+			.item{
+				background:linear-gradient(to bottom left,salmon 40%,#F9FB78)}
+
+			div.dua{
+				background:linear-gradient(to bottom left,#f937a2 55%,#EB57ED); 
+				grid-column: 2/span 3;
+				grid-row: 1/span 2;
+			}
+			div.tiga{
+				background:linear-gradient(to bottom left,#59e095 30%,#5EA3B7);
+				grid-column:5/span 2;  
+			}
+			
+			div.lima{
+				background:linear-gradient(to bottom left,#5EA3B7 30%,#59e095); 
+				grid-column: 5/span 2;
+			}
+
+			div.delapan{
+				background:linear-gradient(to bottom left ,#c598c5,#F9378E 80%);
+			   	grid-column:3/span 2; 
+				grid-row: 3/span 2; 
+			}
+			
+				
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item satu"></div>
+			<div class="dua"></div>
+			<div class="tiga"></div>
+			<div class="item empat"></div>
+			<div class="lima"></div>
+			<div class="item enam"></div>
+			<div class="item tujuh"></div>
+			<div class="delapan"></div>
+			<div class="item sembilan"></div>
+			<div class="item sepuluh"></div>
+			<div class="item sebelas"></div>
+			<div class="item duabelas"></div>
+			<div class="item tigabelas"></div>
+			<div class="item empatbelas"></div>
+		</div>
+	</body>
+</

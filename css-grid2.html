@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>grid span</title>
+
+		<style>
+		
+			.container{
+			
+				margin:100px auto;
+				display: grid;
+				grid-template-columns: repeat(15,1fr);
+				grid-template-rows: 100px 100px 100px 100px;
+				grid-gap: 2px;
+			}
+			
+			div.item{
+				display: grid;
+				text-align: center;
+				line-height: 50px;
+				font-family: arial;
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+			}
+
+			div.item.tiga{justify-content: center;
+						  align-content: center;}
+
+
+			div.satu{background-color: #F70A47;
+				grid-column: 1/span 3;
+		
+			}
+			div.dua{ background-color: #F30C9F;
+	
+				grid-column: 4/span 4;
+				grid-row: 1/span 2;
+				/*grid-row: 1/span 2;}*/
+			/*grid-column: 2/3;*/ }
+			div.tiga{background-color: #F44218;
+				grid-column: 8/span 5;
+				grid-row: 1/span 4;
+				}
+				/*grid-column: 3/5}*/
+			div.empat{background-color: #ffc107;
+				grid-column: 13/span 3;
+				}
+			div.lima{background-color: #13BC13;
+				grid-column: 1/span 3;}
+			div.enam{background-color: #308056;
+				grid-column: 13/span 3;
+			}
+			div.tujuh{background-color: #518A06;
+				grid-column: 1/span 3;
+			}
+			div.delapan{background-color:#13BC13;
+				}
+			div.sembilan{background-color: #33E4B0;
+				grid-column: 5/span 3;}
+			div.sepuluh{background-color: #46d270;
+				grid-column: 13/span 3;}
+			div.sebelas{background-color: #340E51;
+				grid-column: 1/span 7;}
+			div.duabelas{background-color: red;
+				grid-column: 13/span 3;}
+			
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="item satu">1</div>			
+			<div class="item dua">2</div>
+			<div class="item tiga">CSS Grid Layout</div>			
+			<div class="item empat">4</div>
+			<div class="item lima">5</div>			
+			<div class="item enam">6</div>
+			<div class="item tujuh">7</div>			
+			<div class="item delapan">8</div>
+			<div class="item sembilan">9</div>
+			<div class="item sepuluh">10</div>
+			<div class="item sebelas">11</div>			
+			<div class="item duabelas">12</div>
+		
+			
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+			
+		body{
+			margin:30px 15px;
+			padding: 15px;
+			display: grid;
+			grid-template-columns: repeat(3,33.3%);
+			grid-column-gap: 3px;
+		}
+/* INI ADALAH STYLE SATU *//* INI ADALAH STYLE SATU *//* INI ADALAH STYLE SATU */
+/* INI ADALAH STYLE SATU *//* INI ADALAH STYLE SATU *//* INI ADALAH STYLE SATU */
+
+		div.container.satu{
+			display: grid;
+			grid-template-areas: "satu satu"
+								 "dua tiga"
+								 "dua empat"
+								 "lima lima";
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 200px 50px 150px 100px;
+			grid-gap: 3px;
+
+		}
+
+		div.item{
+			border-radius: 5px;}
+
+		div.item.satu{
+			grid-area: satu;
+			background-color: #7D3A7B;
+		}
+		div.item.dua{
+			grid-area: dua;
+			background-color: #41D036;
+		}
+		div.item.tiga{
+			grid-area: tiga;
+			background-color: #71CCCD; 
+		}
+		div.item.empat{
+			grid-area: empat;
+			background-color: red;
+		}
+		div.item.lima{
+			grid-area: lima;
+			background-color: #41D036;
+		}
+
+/*INI ADALAH AKHIR DARI STYLE SATU *//*INI ADALAH AKHIR DARI STYLE SATU *//*INI ADALAH AKHIR DARI STYLE SATU */
+/*INI ADALAH AKHIR DARI STYLE SATU *//*INI ADALAH AKHIR DARI STYLE SATU *//*INI ADALAH AKHIR DARI STYLE SATU */
+
+
+/*INI ADALAH STYLE DUA */ /*INI ADALAH STYLE DUA */ /*INI ADALAH STYLE DUA */ 
+/*INI ADALAH STYLE DUA */ /*INI ADALAH STYLE DUA */ /*INI ADALAH STYLE DUA */ 
+
+		div.container.dua{
+			display: grid;
+			grid-template-areas: "satu dua"
+								 "satu tiga"
+								 "empat empat";
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 2.5fr;
+			grid-gap: 3px;
+		}
+
+		div.kotak{border-radius: 5px;}
+
+		div.kotak.satu{			
+			grid-area: satu;
+			background-color: #41D036;
+		}
+		div.kotak.dua{			
+			grid-area: dua;
+			background-color: #71CCCD;
+		}
+		div.kotak.tiga{			
+			grid-area: tiga;
+			background-color:red;
+		}
+		div.kotak.empat{
+			height: 150px;
+			grid-area: empat;
+			background-color: #7D3A7B;
+		}
+
+
+/*INI ADALAH AKHIR DARI STYLE DUA *//*INI ADALAH AKHIR DARI STYLE DUA *//*INI ADALAH AKHIR DARI STYLE DUA */
+/*INI ADALAH AKHIR DARI STYLE DUA *//*INI ADALAH AKHIR DARI STYLE DUA *//*INI ADALAH AKHIR DARI STYLE DUA */
+
+/*INI ADALAH STYLE TIGA *//*INI ADALAH STYLE TIGA *//*INI ADALAH STYLE TIGA */
+/*INI ADALAH STYLE TIGA *//*INI ADALAH STYLE TIGA *//*INI ADALAH STYLE TIGA */
+
+		div.container.tiga{
+			display: grid;
+			grid-template-areas: "satu satu"
+								 "dua tiga"
+								 "empat empat"
+								 "lima lima";
+			grid-template-columns: 30% 70%;
+			grid-template-rows: 1fr 1fr 2.5fr;
+			grid-gap: 3px;
+		}
+
+		div.box{border-radius: 5px;}
+		div.box.satu{
+			grid-area:satu;
+			background-color: #41D036;
+		}
+		div.box.dua{
+			grid-area: dua;
+			background-color:#71CCCD;
+		}
+		div.box.tiga{
+			grid-area: tiga;
+			background-color: red; 
+		}
+		div.box.empat{
+			grid-area: empat;
+			background-color: #7D3A7B;
+		}
+		div.box.lima{
+			height:50px;
+			grid-area: lima;
+			background-color: #71CCCD;
+		}
+		
+	</style>
+</head>
+	<body>
+			<div class="container satu">
+				<div class="item satu"></div>
+				<div class="item dua"></div>
+				<div class="item tiga"></div>
+				<div class="item empat"></div>
+				<div class="item lima"></div>
+			</div>
+
+			<div class="container dua">
+				<div class="kotak satu"></div>
+				<div class="kotak dua"></div>	
+				<div class="kotak tiga"></div>		
+				<div class="kotak empat"></div>
+			</div>
+
+			<div class="container tiga">
+				<div class="box satu"></div>
+				<div class="box dua"></div>
+				<div class="box tiga"></div>
+				<div class="box empat"></div>
+				<div class="box lima"></div>
+				
+			</div>
+	</body>
+</html>

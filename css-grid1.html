@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css grid</title>
+	</head>
+	<style>
+		.container{
+			width:215px;
+			padding: 10px;
+			margin: auto;
+			border:1px solid black;
+			display:grid;
+			grid-template-areas:
+								
+								 "satu satu four five"
+								 "satu satu two three"
+								 "dua tiga one one" 
+								 "empat lima one one" 
+								 ;
+
+			grid-template-columns: 50px 50px 50px 50px;
+			grid-template-rows: 50px 50px 50px 50px;
+			grid-gap: 5px;
+		}
+
+/* GRID AREA PERTAMA *//* GRID AREA PERTAMA *//* GRID AREA PERTAMA */
+/* GRID AREA PERTAMA *//* GRID AREA PERTAMA *//* GRID AREA PERTAMA */
+		
+		div.item{ background-color: #79D096;}
+
+		.one{
+			background-color:  #25B6D5 ;
+			grid-area: one;
+		}
+
+		.two{			
+			grid-area: two;
+		}
+		.three{			
+			grid-area: three;
+		}
+		.four{			
+			grid-area: four;
+		}
+		.five{		
+			grid-area: five;
+		}
+
+
+/* GRID AREA KEDUA *//* GRID AREA KEDUA *//* GRID AREA KEDUA */
+/* GRID AREA KEDUA *//* GRID AREA KEDUA *//* GRID AREA KEDUA */
+
+
+		.satu{
+			background-color: #55103D;
+			grid-area: satu;
+		}		
+		.dua{
+			grid-area: dua;
+		}		
+
+		.tiga{
+			grid-area: tiga;
+		}		
+		.empat{
+			grid-area: empat;
+		}		
+		.lima{
+			grid-area: lima;
+		}
+
+
+
+
+	</style>
+
+<body>
+	<div class="container">
+		  
+
+		  <!-- GRID AREA PERTAMA -->
+
+			<div class="one"></div>	
+			<div class="two item" ></div>			
+			<div class="three item"></div>
+			<div class="four item"></div>			
+			<div class="five item"></div>	
+
+
+		<!-- GRID AREA KEDUA-->
+
+			<div class="satu"></div>
+			<div class="dua item"></div>
+			<div class="tiga item"></div>
+			<div class="empat item"></div>
+			<div class="lima item"></div>		
+			
+
+	</div>
+</body>
+</html>
